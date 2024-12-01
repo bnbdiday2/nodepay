@@ -32,7 +32,7 @@ jobs:
             - name: Nodepay-run
               run: |
                 source venv/bin/activate
-                timeout 3m python noproxy.py
+                timeout 3m python run.py
     job_nodepay1:
         runs-on: ubuntu-latest
         timeout-minutes: 21
@@ -47,7 +47,7 @@ jobs:
             - name: Nodepay-run
               run: |
                 source venv/bin/activate
-                timeout 3m python noproxy.py
+                timeout 3m python run.py
     job_nodepay:
         runs-on: ubuntu-latest
         timeout-minutes: 21
@@ -62,4 +62,4 @@ jobs:
             - name: Nodepay-run
               run: |
                 source venv/bin/activate
-                timeout 3m python noproxy.py
+                timeout 3m python run.py
