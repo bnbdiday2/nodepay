@@ -238,6 +238,10 @@ async def main():
     
     tokens = [os.getenv('NODEPAY_TOKEN')]
     
+    rr = tokens[0]
+    
+    print(rr)
+    
     # tokens = [os.getenv('NODEPAY_TOKEN'),os.getenv('NODEPAY_TOKEN1'),os.getenv('NODEPAY_TOKEN2')]
 
     # Use ThreadPoolExecutor to run account processes in separate threads
