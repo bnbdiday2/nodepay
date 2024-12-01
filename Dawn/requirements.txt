@@ -1,6 +1,0 @@
-colorama~=0.4.6
-colorlog~=6.9.0
-fake_useragent~=1.5.1
-python-telegram-bot~=21.7
-Requests~=2.32.3
-urllib3~=2.2.3

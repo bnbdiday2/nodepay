@@ -1,4 +1,0 @@
-fake_useragent~=1.5.1
-loguru~=0.7.2
-python-dotenv~=1.0.1
-websockets~=12.0

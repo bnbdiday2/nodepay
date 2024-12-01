@@ -1,6 +1,0 @@
-selenium
-webdriver-manager
-requests
-python-dotenv
-colorama
-psutil

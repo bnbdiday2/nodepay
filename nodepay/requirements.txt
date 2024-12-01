@@ -1,5 +1,0 @@
-aiohttp~=3.11.7
-cloudscraper~=1.2.71
-fake_useragent~=1.5.1
-loguru~=0.7.2
-python-dotenv~=1.0.1

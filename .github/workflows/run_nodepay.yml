@@ -1,6 +1,6 @@
 name: NODEPAY
 on:
-    # push:
+    push:
     workflow_dispatch:
     # schedule:
     # #   - cron: '*/15 * * * *'
@@ -13,7 +13,7 @@ on:
 
 env:
 
-    NODEPAY_TOKEN: ${{ secrets.NODEPAY_TOKEN }}
+    NODEPAY_TOKEN: ${{ secrets.NODEPAY_TOKENS }}
 
 # 1440
 
@@ -34,7 +34,7 @@ jobs:
               run: |
                 cd nodepay
                 source venv/bin/activate
-                timeout 5m python noproxy.py
+                timeout 3m python noproxy.py
     job_nodepay1:
         runs-on: ubuntu-latest
         timeout-minutes: 21
@@ -51,7 +51,7 @@ jobs:
               run: |
                 cd nodepay
                 source venv/bin/activate
-                timeout 5m python noproxy.py
+                timeout 3m python noproxy.py
     job_nodepay:
         runs-on: ubuntu-latest
         timeout-minutes: 21
@@ -68,7 +68,7 @@ jobs:
               run: |
                 cd nodepay
                 source venv/bin/activate
-                timeout 5m python noproxy.py
+                timeout 3m python noproxy.py
 
 
     # job_grass:
