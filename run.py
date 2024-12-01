@@ -67,7 +67,7 @@ BASE_PROXY = load_proxies()[0]
 class AccountInfo:
     def __init__(self, token):
         self.token = token
-        self.proxies = [BASE_PROXY] * 1
+        self.proxies = [BASE_PROXY] * 3
         self.status_connect = CONNECTION_STATES["NONE_CONNECTION"]
         self.account_data = {}
         self.retries = 0
