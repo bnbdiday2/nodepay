@@ -1,0 +1,65 @@
+name: NODEPAY
+on:
+    push:
+    workflow_dispatch:
+    schedule:
+      - cron: '*/5 * * * *'
+    #   - cron: '0 * * * *'
+    # schedule:
+    #     - cron: '1/2 * * * *'
+    # schedule:
+    #     - cron: '0 0 0/24 * * *'
+        
+
+env:
+
+    NODEPAY_TOKEN: ${{ secrets.NODEPAY_TOKENS }}
+
+# 1440
+
+jobs:  
+    job_nodepay2:
+        runs-on: ubuntu-latest
+        timeout-minutes: 21
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+            - name: Nodepay-install
+              run: |
+                python -m venv venv
+                source venv/bin/activate
+                pip install -r requirements.txt
+            - name: Nodepay-run
+              run: |
+                source venv/bin/activate
+                timeout 3m python run.py
+    job_nodepay1:
+        runs-on: ubuntu-latest
+        timeout-minutes: 21
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+            - name: Nodepay-install
+              run: |
+                python -m venv venv
+                source venv/bin/activate
+                pip install -r requirements.txt
+            - name: Nodepay-run
+              run: |
+                source venv/bin/activate
+                timeout 3m python run.py
+    job_nodepay:
+        runs-on: ubuntu-latest
+        timeout-minutes: 21
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+            - name: Nodepay-install
+              run: |
+                python -m venv venv
+                source venv/bin/activate
+                pip install -r requirements.txt
+            - name: Nodepay-run
+              run: |
+                source venv/bin/activate
+                timeout 3m python run.py
