@@ -242,7 +242,7 @@ async def main():
     
     tokens = [os.getenv('NODEPAY_TOKEN')]
     print(f"{tokens}")
-    print(f"{tokens[0]}")
+    print(f"{str(tokens[0])+'1'}")
     
     # tokens = [os.getenv('NODEPAY_TOKEN'),os.getenv('NODEPAY_TOKEN1'),os.getenv('NODEPAY_TOKEN2')]
 
