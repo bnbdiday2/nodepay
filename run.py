@@ -236,6 +236,9 @@ async def main():
     tokens = os.getenv('NODEPAY_TOKENS')
     tokens = tokens.split(":")
     
+    # for t in tokens:
+    #     print(t)
+    
     # tokens = [os.getenv('NODEPAY_TOKEN4')]
     
     # tokens = [os.getenv('NODEPAY_TOKEN'),os.getenv('NODEPAY_TOKEN1'),os.getenv('NODEPAY_TOKEN2')]
