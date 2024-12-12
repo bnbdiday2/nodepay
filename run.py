@@ -233,14 +233,16 @@ async def process_account_threaded(token):
 async def main():
     # tokens = await load_tokens()
     
-    tokens = os.getenv('NODEPAY_TOKENS')
+    # tokens = os.getenv('NODEPAY_TOKENS')
+    # print(f"{tokens}")
+    # tokens = str(tokens).split(":")
+    
+    # for t in tokens:
+    #     print(t)
+    
+    tokens = [os.getenv('NODEPAY_TOKEN')]
     print(f"{tokens}")
-    tokens = str(tokens).split(":")
-    
-    for t in tokens:
-        print(t)
-    
-    # tokens = [os.getenv('NODEPAY_TOKEN4')]
+    print(f"{tokens[0]}")
     
     # tokens = [os.getenv('NODEPAY_TOKEN'),os.getenv('NODEPAY_TOKEN1'),os.getenv('NODEPAY_TOKEN2')]
 
