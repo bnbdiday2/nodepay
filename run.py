@@ -234,10 +234,11 @@ async def main():
     # tokens = await load_tokens()
     
     tokens = os.getenv('NODEPAY_TOKENS')
-    tokens = tokens.split(":")
+    print(f"tokens")
+    tokens = str(tokens).split(":")
     
-    # for t in tokens:
-    #     print(t)
+    for t in tokens:
+        print(t)
     
     # tokens = [os.getenv('NODEPAY_TOKEN4')]
     
