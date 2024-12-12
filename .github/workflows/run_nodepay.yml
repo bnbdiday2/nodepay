@@ -1,10 +1,10 @@
 name: NODEPAY
 on:
-    push:
+    # push:
     workflow_dispatch:
     schedule:
-      - cron: '*/5 * * * *'
-    #   - cron: '0 * * * *'
+      # - cron: '*/5 * * * *'
+      - cron: '0 * * * *'
     # schedule:
     #     - cron: '1/2 * * * *'
     # schedule:
